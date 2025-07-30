@@ -17,9 +17,9 @@ export interface MetricsData {
 // TODO: Configurar URL do webhook n8n
 // 1. Acesse sua instância do n8n
 // 2. Crie um webhook node
-// 3. Copie a URL gerada (exemplo: https://your-n8n.com/webhook/abc123)
-// 4. Substitua a URL padrão no construtor acima
-// 5. Teste o envio das métricas
+// 3. Faça o necessário para que o webhook seja chamado quando o botão "Exportar" for clicado
+// 4. Teste o envio das métricas
+// 5. Crie o botão "Exportar" no arquivo App.tsx
 
 class WebhookService {
   private webhookUrl: string;

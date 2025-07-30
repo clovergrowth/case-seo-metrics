@@ -19,13 +19,13 @@ const FileUpload: React.FC<FileUploadProps> = ({ state, onJsonUpload, onCsvUploa
               <div className="upload-icon">📊</div>
               <span>Arquivo JSON</span>
             </label>
-            <input
+            {/* <input
               id="json-upload"
               type="file"
               accept="application/json"
               onChange={onJsonUpload}
               className="file-input"
-            />
+            /> */}
             {state.jsonFile && (
               <div className="file-info">
                 <span className="file-name">✓ {state.jsonFile.name}</span>
@@ -41,13 +41,13 @@ const FileUpload: React.FC<FileUploadProps> = ({ state, onJsonUpload, onCsvUploa
               <div className="upload-icon">📋</div>
               <span>Arquivo CSV</span>
             </label>
-            <input
+            {/* <input
               id="csv-upload"
               type="file"
               accept=".csv"
               onChange={onCsvUpload}
               className="file-input"
-            />
+            /> */}
             {state.csvFile && (
               <div className="file-info">
                 <span className="file-name">✓ {state.csvFile.name}</span>
